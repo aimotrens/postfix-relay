@@ -40,9 +40,10 @@ Beispiel für eine docker-compose.yml
 ```yaml
 version: "3.7"
   services:
-    image: t3a6/postfix-relay:latest
-    environment:
-      MYHOSTNAME: my-domain.com
-      MYNETWORKS: 192.168.1.0/24
+    mail:
+      image: t3a6/postfix-relay:latest
+      environment:
+       MYHOSTNAME: my-domain.com
+       MYNETWORKS: 192.168.1.0/24
 
 ```
