@@ -1,4 +1,4 @@
-FROM debian:bookworm@sha256:afa55815a92b4a77511569beb652efde33b9c7d27d25efa745311107f5ae6257
+FROM debian:bookworm@sha256:a92ed51e0996d8e9de041ca05ce623d2c491444df6a535a566dabd5cb8336946
 
 RUN apt-get update && \
     apt-get install -y postfix procps && \
